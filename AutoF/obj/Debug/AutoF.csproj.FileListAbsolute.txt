@@ -1,0 +1,11 @@
+D:\GITHUB\AutoF\AutoF\bin\Debug\AutoF.exe.config
+D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.Main.resources
+D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.Properties.Resources.resources
+D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.csproj.GenerateResource.Cache
+D:\GITHUB\AutoF\AutoF\bin\Debug\AutoF.exe
+D:\GITHUB\AutoF\AutoF\bin\Debug\AutoF.pdb
+D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.exe
+D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.pdb
+D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.UserControl1.resources
+D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.csprojResolveAssemblyReference.cache
+D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.Test.resources

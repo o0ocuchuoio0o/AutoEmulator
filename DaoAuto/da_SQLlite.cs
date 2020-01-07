@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Data;
-using System.Data;
+
 
 namespace DaoAuto
 {
@@ -36,8 +36,8 @@ namespace DaoAuto
             {               
                 conn.Close();
                 conn.Dispose();
-            }
-           
+            }           
         }
+
     }
 }

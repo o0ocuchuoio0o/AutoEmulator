@@ -1,0 +1,4 @@
+D:\GITHUB\AutoEmulator\DaoAuto\bin\Debug\DaoAuto.dll
+D:\GITHUB\AutoEmulator\DaoAuto\bin\Debug\DaoAuto.pdb
+D:\GITHUB\AutoEmulator\DaoAuto\obj\Debug\DaoAuto.dll
+D:\GITHUB\AutoEmulator\DaoAuto\obj\Debug\DaoAuto.pdb

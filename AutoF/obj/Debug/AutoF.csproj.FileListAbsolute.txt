@@ -22,3 +22,6 @@ D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.UserControl1.resources
 D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.csproj.GenerateResource.Cache
 D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.exe
 D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.pdb
+D:\GITHUB\AutoEmulator\AutoF\bin\Debug\DaoAuto.dll
+D:\GITHUB\AutoEmulator\AutoF\bin\Debug\System.Data.SQLite.dll
+D:\GITHUB\AutoEmulator\AutoF\bin\Debug\DaoAuto.pdb

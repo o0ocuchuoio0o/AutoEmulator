@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -77,7 +78,7 @@ namespace AutoF
                 //Settings.Default.LastUsedFolder = Path.GetDirectoryName(dlg.FileNames[0]);
                 txtpathldplayer.Text = dlg.FileName;
                 ExeConfigurationFileMap exmap = new ExeConfigurationFileMap();
-                exmap.ExeConfigFilename = @"UpLoadNews.exe.config";
+                exmap.ExeConfigFilename = @"AutoF.exe.config";
                 //Configuration cf = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                 Configuration cf = ConfigurationManager.OpenMappedExeConfiguration(exmap, ConfigurationUserLevel.None);
                 cf.AppSettings.Settings.Remove("PathLDPlayer");
@@ -94,7 +95,103 @@ namespace AutoF
 
         private void btnrandomconfig_Click(object sender, EventArgs e)
         {
+            DataTable table = new DataTable();
+            table.Columns.Add("ID", typeof(int));
+            foreach (DataGridViewRow row in dataGridViewListReupMobi.Rows)
+            {
+                int i = row.Index;
+                bool chk = false;
+                try
+                {
+                    chk = bool.Parse(dataGridViewListReupMobi.Rows[i].Cells[0].Value.ToString());
+                }
+                catch { }
+                if (chk == true)
+                {
+                    int id = int.Parse(dataGridViewListReupMobi.Rows[i].Cells["ID"].Value.ToString());
+                    dataGridViewListReupMobi.Rows[i].DefaultCellStyle.BackColor = Color.Beige;
+                    table.Rows.Add(id);
+                }
 
+            }
+            if (table.Rows.Count > 0)
+            {
+
+                #region //copy template
+                foreach (DataRow row in table.Rows)
+                {
+                    //int idmail = int.Parse(row["ID"].ToString());
+                    //DataTable thongtinkenh = new DataTable();
+                    //daWS_FakeAuto tt = new daWS_FakeAuto();
+                    //thongtinkenh = tt.ChiTietMail(idmail);
+                    //DataRow rthongtin = thongtinkenh.Rows[0];
+                    //string linkkenhreup = rthongtin["LinkKenhReUp"].ToString();
+                    //string ngonngugoc = rthongtin["NgonNguGoc"].ToString();
+                    //string ngonnguthay = rthongtin["NgonNguThay"].ToString();
+                    //string mail = rthongtin["Mail"].ToString();
+                    //string pass = rthongtin["Pass"].ToString();
+                    //string mailkhoiphuc = rthongtin["MailKhoiPhuc"].ToString();
+                    //string themtieude = rthongtin["ThemTieuDe"].ToString();
+                    //string bottieude = rthongtin["BotTieuDe"].ToString();
+                    //string themmota = rthongtin["ThemMoTa"].ToString();
+                    //string themtag = rthongtin["ThemTag"].ToString();
+                    //int soluongup = int.Parse(rthongtin["SoLuongVideoUp"].ToString());
+                    //try
+                    //{
+                    //    #region // trước khi đọc file tắt hết ứng dụng 
+                    //    try
+                    //    {
+                    //        foreach (Process proc in Process.GetProcessesByName("dnplayer"))
+                    //        {
+                    //            proc.Kill();
+                    //        }
+                    //    }
+                    //    catch { }
+                    //    #endregion
+
+                    //    #region đọc các file config random của hệ thống
+                    //    string path = txtpathldplayer.Text.Replace("dnplayer.exe", "");
+                    //    string pathconfig = path + @"vms\config\leidian" + idmail.ToString() + ".config";                      
+                    //    #endregion
+                    //    #region // đọc dữ liệu template config
+
+                    //    string pathtemplate = Application.StartupPath + @"\TemplateEmulator\leidian0.config";
+                    //    string texttemplate = File.ReadAllText(pathtemplate);
+                      
+                    //    #endregion
+                    //    File.Copy(pathtemplate, pathconfig, true);
+
+                    //    #region // thuc hien copy cac file may ao
+                    //    string path_vm = path + @"vms\leidian" + idmail.ToString();
+                    //    //hamxoafile(path_vm);
+                    //    //string path_vmconfig = Application.StartupPath + @"\TemplateEmulator\leidian0";
+                    //    //CopyFolder(@path_vmconfig, path_vm);
+                    //    #endregion                     
+                    //    if (MessageBox.Show("Done! Can you next login?", "thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                    //     == DialogResult.Yes)
+                    //    {
+                    //        Process p = new Process();
+                    //        p.StartInfo.FileName = txtpathldplayer.Text;
+                    //        p.StartInfo.Arguments = "index =" + idmail.ToString();
+                    //        p.Start();
+                    //        Thread.Sleep(2000);
+                    //        p.WaitForInputIdle();
+                    //        SetParent(p.MainWindowHandle, this.panelmobile.Handle);
+                    //        SetWindowLong(p.MainWindowHandle, GWL_STYLE, WS_VISIBLE);
+                    //        MoveWindow(p.MainWindowHandle, 0, -35, 367, 654, true);
+                    //        Thread.Sleep(2000);
+                    //    }
+
+                    //}
+                    //catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+                }
+                #endregion
+            }
+            else
+            {
+                MessageBox.Show("Hãy chọn kênh cần tạo emulator", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
 
         private void btnrunemulator_Click(object sender, EventArgs e)

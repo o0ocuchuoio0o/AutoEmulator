@@ -9,9 +9,9 @@ D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.pdb
 D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.UserControl1.resources
 D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.csprojResolveAssemblyReference.cache
 D:\GITHUB\AutoF\AutoF\obj\Debug\AutoF.Test.resources
+D:\GITHUB\AutoEmulator\AutoF\bin\Debug\x86\sqlite3.dll
+D:\GITHUB\AutoEmulator\AutoF\bin\Debug\x64\sqlite3.dll
 D:\GITHUB\AutoEmulator\AutoF\bin\Debug\AutoF.exe.config
-D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.exe
-D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.pdb
 D:\GITHUB\AutoEmulator\AutoF\bin\Debug\AutoF.exe
 D:\GITHUB\AutoEmulator\AutoF\bin\Debug\AutoF.pdb
 D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.csprojResolveAssemblyReference.cache
@@ -20,3 +20,5 @@ D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.Properties.Resources.resources
 D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.Test.resources
 D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.UserControl1.resources
 D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.csproj.GenerateResource.Cache
+D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.exe
+D:\GITHUB\AutoEmulator\AutoF\obj\Debug\AutoF.pdb

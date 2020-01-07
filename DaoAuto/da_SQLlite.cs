@@ -38,6 +38,61 @@ namespace DaoAuto
                 conn.Dispose();
             }           
         }
+        public void ThemTK(SQLiteConnection conn, string Email, string Pass, string EmailKhoiPhuc,string DienThoai, string Proxy)
+        {
+            conn.Open();
+            string caulenh = "";
+            SQLiteCommand cmd = new SQLiteCommand(caulenh, conn);
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandTimeout = 72000;
+            try
+            {
+                cmd.Parameters.AddWithValue("@Email", Email);
+                cmd.Parameters.AddWithValue("@Pass", Pass);
+                cmd.Parameters.AddWithValue("@EmailKhoiPhuc", EmailKhoiPhuc);
+                cmd.Parameters.AddWithValue("@DienThoai", DienThoai);
+                cmd.Parameters.AddWithValue("@Proxy", Proxy);
+                cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                throw;
+            }
+            finally
+            {
+                cmd.Dispose();
+                conn.Close();
+                conn.Dispose();
+            }
 
+        }
+        public void SuaTK(SQLiteConnection conn, string Email, string Pass, string EmailKhoiPhuc, string DienThoai, string Proxy)
+        {
+            conn.Open();
+            string caulenh = "";
+            SQLiteCommand cmd = new SQLiteCommand(caulenh, conn);
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandTimeout = 72000;
+            try
+            {
+                cmd.Parameters.AddWithValue("@Email", Email);
+                cmd.Parameters.AddWithValue("@Pass", Pass);
+                cmd.Parameters.AddWithValue("@EmailKhoiPhuc", EmailKhoiPhuc);
+                cmd.Parameters.AddWithValue("@DienThoai", DienThoai);
+                cmd.Parameters.AddWithValue("@Proxy", Proxy);
+                cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                throw;
+            }
+            finally
+            {
+                cmd.Dispose();
+                conn.Close();
+                conn.Dispose();
+            }
+
+        }
     }
 }
